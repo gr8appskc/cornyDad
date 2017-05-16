@@ -2,7 +2,7 @@
 
 const Alexa = require('alexa-sdk');
 
-const APP_ID = 'amzn1.ask.skill.45c33175-8876-4e39-8586-145acea39579';  // TODO replace with your app ID (OPTIONAL).
+const APP_ID = '';  // TODO replace with your app ID (OPTIONAL).
 
 
 const languageStrings = {
@@ -93,7 +93,7 @@ const handlers = {
         this.emit(':tellWithCard', speechOutput, this.t('SKILL_NAME'), randomFact);
     },
     'AMAZON.RepeatIntent': function () {
-        this.emit('GetFact');  
+        this.emit('GetFact');
     },
     'AMAZON.HelpIntent': function () {
         const speechOutput = this.t('HELP_MESSAGE');
